@@ -19,11 +19,15 @@ This app is an app that allows the user to keep track of the shows they have wat
 
 | ENDPOINT | METHOD | PURPOSE |
 |----------|--------|---------|
-| /dog | get | list all dogs |
-|/dog/:id | get | list one dog |
+| /Shows | Get | list all Shows |
+|/Shows/new | Get | Show a form to add a new show |
+|/Shows/:id | Delete | Remove a show from the DB |
+|/Shows/:id | Put | Update a show's data |
+|/Shows | Post | Show that was created is added to DB and user is redirected |
+|/Shows/:id/edit | get | Show a form prefilled with the show's current data to be edited then trigger the update route|
+|/Shows/:id | get | Show one Show |
 
 ## ERD (ENTITY RELATIONSHIP DIAGRAM)
 
-![PICTURE OF ERD](./images/ERD.png)
+![PICTURE OF ERD](./images/Myerd.png)
 
-- [Free ERD Diagram Tool](https://dbdiagram.io/home)
