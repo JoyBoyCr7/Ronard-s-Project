@@ -24,6 +24,6 @@ This app is an app that allows the user to keep track of the shows they have wat
 
 ## ERD (ENTITY RELATIONSHIP DIAGRAM)
 
-![PICTURE OF ERD](http://imgur.com)
+![PICTURE OF ERD](./images/ERD.png)
 
-- [Free ERD Diagram Tool](https://dbdiagram.io/home
+- [Free ERD Diagram Tool](https://dbdiagram.io/home)
