@@ -7,10 +7,10 @@
     <title>Document</title>
 </head>
 <body>
-    <a href="/shows/new"><button>Add A New Show</button></a>
-    <%= %>
+    <a href="/shows/new/edit">Add Show</a>
+  
     <%shows.forEach(element => { %>
-        <h1><%= element.showName %></h1>
+        <a href="/shows/<%=element._id%>"%>><h1><%= element.showName %></h1></a>
     <%});  %>
 </body>
 </html>

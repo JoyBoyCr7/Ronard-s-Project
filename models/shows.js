@@ -3,8 +3,8 @@ const mongoose = require('./connection')
 const Schema = new mongoose.Schema({
     showName: String,
     yearCompleted: String,
-    personalRating: Number,
-    wouldRecommend: String
+    Rating: Number,
+    wouldRecommend: Boolean
 })
 
 const Show = mongoose.model("show", Schema)
