@@ -30,8 +30,9 @@ routes.post("/shows", async(req, res)=>{
     
 })
 
-routes.get("/shows/:id/edit", (req, res)=>{
-    res.render("edit.ejs")
+routes.get("/shows/:id/edit", async(req, res)=>{
+    const show = await showModel.findById(req.params.id)
+    res.render("edit.ejs", {show})
 })
 
 routes.get("/shows/:id", async(req, res)=>{
