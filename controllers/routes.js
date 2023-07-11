@@ -18,8 +18,19 @@ routes.delete("/shows/:id", (req, res)=>{
     res.send("welcome to fazoland delete")
 })
 
-routes.put("/shows/:id", (req, res)=>{
-    res.send("welcome to fazoland update")
+routes.put("/shows/:id", async(req, res)=>{
+    const id = req.params.id
+    const showName = req.body.showName
+    req.body.wouldRecommend = req.body.wouldRecommend === "on" ? true:false
+    console.log(showName)
+    await showModel.findByIdAndUpdate(id,{
+        showName: req.body.showName,
+        yearCompleted: req.body.yearCompleted,
+        Rating: req.body.Rating,
+        wouldRecommend: req.body.wouldRecommend,
+    })
+    res.redirect("/shows")
+
 })
 
 routes.post("/shows", async(req, res)=>{
