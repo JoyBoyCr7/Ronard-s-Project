@@ -14,8 +14,10 @@ routes.get("/shows/new", (req, res)=>{
     res.render("new.ejs")
 })
 
-routes.delete("/shows/:id", (req, res)=>{
-    res.send("welcome to fazoland delete")
+routes.delete("/shows/:id", async(req, res)=>{
+    const id = req.params.id
+    await showModel.findByIdAndDelete(id)
+    res.redirect("/shows")
 })
 
 routes.put("/shows/:id", async(req, res)=>{
