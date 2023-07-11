@@ -16,7 +16,9 @@ app.use(express.static('public')); // serve static files from public folder
 
 // Routes
 
-app.use("/", routes)
+app.get('/', (req, res) => {
+    res.send('Hello World!');
+    })
 
 // Listen
 const PORT = process.env.PORT || 3000;
