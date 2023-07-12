@@ -1,0 +1,18 @@
+h1{
+    color: aqua;
+}
+body{
+    background-color: black;
+    margin: 0px;
+}
+
+.nav{
+    background-color: #212127;
+    margin-top: 0px;
+    right: 0px;
+}
+
+.logo{
+    color: white;
+    margin-top: 0px;
+}
