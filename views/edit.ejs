@@ -7,16 +7,22 @@
     <title>Document</title>
     <%- include("./partials/files.ejs") %>
 </head>
+<style>
+    div{
+        background-color: white;
+    }
+</style>
 <body>
     <h1>Edit time</h1>
-    <form action="/shows/<%= show._id %>/?_method=PUT" method="post">
-        <input type="text" name="showName" placeholder="<%=show.showName %>" required>
-        <input type="text" name="yearCompleted" placeholder="<%=show.yearCompleted %>">
-        <input type="text" name="Rating" placeholder="<%=show.Rating %>">
-        <input type="checkbox" name="wouldRecommend" <% if (show.wouldRecommend === true){ %>
-        <% } %> checkbox>
-        <input type="submit">
-        
-    </form>
+    <div>
+        <form action="/shows/<%= show._id %>/?_method=PUT" method="post">
+            <input type="text" name="showName" placeholder="<%=show.showName %>" required>
+            <input type="text" name="yearCompleted" placeholder="<%=show.yearCompleted %>">
+            <input type="text" name="Rating" placeholder="<%=show.Rating %>">
+            <input type="text" name="showImg" >
+            <input type="checkbox" name="wouldRecommend" >
+            <input type="submit">
+        </form>
+    </div>
 </body>
 </html>

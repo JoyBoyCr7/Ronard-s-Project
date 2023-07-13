@@ -7,14 +7,22 @@
     <title>Document</title>
     <link rel="stylesheet" href="/styles.css">
 </head>
+<style>
+    div{
+        background-color: white;
+    }
+</style>
 <body>
     <h1>new route</h1>
-    <form action="/shows" method="post">
-        <labl>Show name:<input type="text" name="showName" placeholder="Showname" required></labl>
-        <label > Year watched: <input type="text" name="yearCompleted" placeholder="Year you saw the show"></label>
-        <input type="number" name="Rating" placeholder="Out of 5">
-        <input type="checkbox" name="wouldRecommend">
-        <input type="submit">
-    </form>
+    <div>
+        <form action="/shows" method="post">
+            <labl>Show name:<input type="text" name="showName" placeholder="Showname" required></labl>
+            <label > Year watched: <input type="text" name="yearCompleted" placeholder="Year you saw the show"></label>
+            <label>Rating:<input type="number" name="Rating" placeholder="Out of 5"></label>
+            <label> Show image:<input type="text" name="showImg" placeholder="Image of your show"></label>
+            <label> Would Recommend: <input type="checkbox" name="wouldRecommend"> </label>
+            <input type="submit">
+        </form>
+    </div>
 </body>
 </html>

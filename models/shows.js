@@ -4,7 +4,8 @@ const Schema = new mongoose.Schema({
     showName: String,
     yearCompleted: String,
     Rating: Number,
-    wouldRecommend: Boolean
+    wouldRecommend: Boolean,
+    showImg: String
 })
 
 const Show = mongoose.model("show", Schema)
