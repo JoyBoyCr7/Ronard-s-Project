@@ -8,7 +8,25 @@
     <link rel="stylesheet" href="/styles.css">
 </head>
 <style>
-    
+    .itemone{
+        width: 200px;
+        height: 200px;
+    }
+    img{
+        width: 200px;
+        height: 200px;
+    }
+    .container{
+        width: 200px;
+        height: 300px;
+    }
+    .bottomdiv{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .itemthree{
+        margin-left: 16px;
+    }
 </style>
 <body>
     <div class="nav">
@@ -31,10 +49,24 @@
             <div class="add"><a href="/shows/new">Add A Show</a></div>
         </div>
     </div>
-    <%shows.forEach(element => { %>
+    <div class="allimages">
+        <%shows.forEach(element => { %>
+        <div class="container">
+            <div class="itemone" >
+                <img src="https://w0.peakpx.com/wallpaper/454/815/HD-wallpaper-naruto-art-fictional-character-thumbnail.jpg" alt="">
+            </div>
+            <div class="bottomdiv">
+                <div class="itemtwo">
+                    <a href="/shows/<%=element._id%>"%>><h1><%= element.showName %></h1></a>
+                </div>
 
-        <a href="/shows/<%=element._id%>"%>><h1><%= element.showName %></h1></a>
-    <%});  %>
+                <div class="itemthree">
+                    <a href="/shows/<%=element._id%>"%>><h1><%= element.Rating %></h1></a>
+                </div>
+            </div>
+        </div>
+        <%});  %>
+    </div>
 
 </body>
 </html>

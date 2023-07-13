@@ -36,7 +36,7 @@ body{
 }
 
 .add{
-    display: flex;
+    display: grid;
     justify-content: center;
     align-items: center;
     
@@ -44,3 +44,11 @@ body{
 .end{
     justify-self: end;
 }
+
+.allimages{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+
