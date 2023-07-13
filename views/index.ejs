@@ -8,10 +8,24 @@
     <link rel="stylesheet" href="/styles.css">
 </head>
 <body>
-    <div class="nav"><h1 class="logo">Top Rated</h1></div>
+    <div class="nav">
+        <div class="inner"><h1 class="logo">Top Rated</h1>
+            <div> 
+                <img src="onepiece.jpg" alt="" class="logoimg"> 
+                <img src="https://upload.wikimedia.org/wikipedia/commons/c/c9/Naruto_logo.svg" alt="" class="logoimg"> 
+                <img src="https://upload.wikimedia.org/wikipedia/commons/a/aa/82-822817_power-photo-gallery-power-tv-show-logo.png" alt="" class="logoimg"> 
+                <img src="pngegg.png" alt="" class="logoimg"> 
+                <img src="bleach.jpg" alt="" class="logoimg"> 
+                <img src="HUNTER-x-HUNTER-LOGO-PNG7.png" alt="" class="logoimg"> 
+
+            </div>
+        </div>
+    </div>
     <a href="/shows/new">Add Show</a>
     <%shows.forEach(element => { %>
         <a href="/shows/<%=element._id%>"%>><h1><%= element.showName %></h1></a>
     <%});  %>
+
+    
 </body>
 </html>

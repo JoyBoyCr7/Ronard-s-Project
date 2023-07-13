@@ -4,6 +4,8 @@ h1{
 body{
     background-color: black;
     margin: 0px;
+    
+    
 }
 
 .nav{
@@ -15,4 +17,17 @@ body{
 .logo{
     color: white;
     margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+.inner{
+    background-color: burlywood;
+    padding: 0px 16px;
+    max-width: 1000px;
+    margin: 0px auto;
+}
+
+.logoimg{
+    width: 40px;
+    height: 40px;
 }
