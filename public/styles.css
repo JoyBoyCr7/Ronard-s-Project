@@ -18,6 +18,7 @@ body{
     color: white;
     margin-top: 0px;
     margin-bottom: 0px;
+    margin-right: 16px;
 }
 
 .inner{
@@ -25,9 +26,21 @@ body{
     padding: 0px 16px;
     max-width: 1000px;
     margin: 0px auto;
+    display: flex;
+    flex-wrap: wrap;
 }
 
 .logoimg{
     width: 40px;
     height: 40px;
+}
+
+.add{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.end{
+    justify-self: end;
 }
