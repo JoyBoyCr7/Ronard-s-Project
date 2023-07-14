@@ -42,6 +42,9 @@
     .diviver{
         height: 100px;
     }
+    h2{
+        color: bisque;
+    }
 </style>
 <body>
     <div class="nav">
@@ -69,11 +72,11 @@
         <%shows.forEach(element => { %>
         <div class="container">
             <div class="itemone" >
-                <img src="https://w0.peakpx.com/wallpaper/454/815/HD-wallpaper-naruto-art-fictional-character-thumbnail.jpg" alt="">
+                <a href="/shows/<%=element._id%>"><img src= <%= element.showImg %> alt=""></a>
             </div>
             <div class="bottomdiv">
                 <div class="itemtwo">
-                    <a href="/shows/<%=element._id%>"%>><h2><%= element.showName %></h2></a>
+                    <h2><%= element.showName %></h2>
                 </div>
 
                 <div class="itemthree">
