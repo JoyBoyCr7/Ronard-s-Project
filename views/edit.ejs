@@ -16,9 +16,9 @@
     <h1>Edit <%= show.showName %></h1>
     <div>
         <form action="/shows/<%= show._id %>/?_method=PUT" method="post">
-            <label>Showname:<input type="text" name="showName" value="<%=show.showName %>" ></label>
-            <input type="text" name="yearCompleted" value="<%=show.yearCompleted %>">
-            <input type="text" name="Rating" value="<%=show.Rating %>">
+            <label>Show Name:<input type="text" name="showName" value="<%=show.showName %>" ></label>
+            <label> Year Completed:<input type="text" name="yearCompleted" value="<%=show.yearCompleted %>"></label>
+            <label> Number of Stars:<input type="text" name="Rating" value="<%=show.Rating %>"></label>
             <input type="text" name="showImg" value="<%= show.showImg %>">
             <input type="checkbox" name="wouldRecommend" >
             <input type="submit">

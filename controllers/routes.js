@@ -30,6 +30,7 @@ routes.put("/shows/:id", async(req, res)=>{
         yearCompleted: req.body.yearCompleted,
         Rating: req.body.Rating,
         wouldRecommend: req.body.wouldRecommend,
+        showImg: req.body.showImg
     })
     res.redirect("/shows")
 
