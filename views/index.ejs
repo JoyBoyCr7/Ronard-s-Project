@@ -9,23 +9,27 @@
 </head>
 <style>
     .itemone{
-        width: 200px;
-        height: 200px;
+        width: 300px;
+        height: 300px;
     }
     img{
-        width: 200px;
-        height: 200px;
+        width: 300px;
+        height: 300px;
     }
     .container{
-        width: 200px;
-        height: 300px;
+        width: 300px;
+        height: 400px;
     }
     .bottomdiv{
         display: flex;
         flex-wrap: wrap;
+        justify-content: center;
     }
     .itemthree{
         margin-left: 16px;
+        position: relative;
+        margin: 0 auto;
+        top: 4px;
     }
 </style>
 <body>
@@ -57,11 +61,14 @@
             </div>
             <div class="bottomdiv">
                 <div class="itemtwo">
-                    <a href="/shows/<%=element._id%>"%>><h1><%= element.showName %></h1></a>
+                    <a href="/shows/<%=element._id%>"%>><h2><%= element.showName %></h2></a>
                 </div>
 
                 <div class="itemthree">
-                    <a href="/shows/<%=element._id%>"%>><h1><%= element.Rating %></h1></a>
+                    <% let stars = "" %>
+                    <% for(let i = 0; i < element.Rating; i++){%>
+                    <% stars+="⭐" }%>
+                    <a href="/shows/<%=element._id%>"%>><h3><%= stars %></h3></a>
                 </div>
             </div>
         </div>

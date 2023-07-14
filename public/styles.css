@@ -36,8 +36,7 @@ body{
 }
 
 .add{
-    display: grid;
-    justify-content: center;
+    display: grid;   
     align-items: center;
     
 }
@@ -49,6 +48,7 @@ body{
     display: flex;
     flex-wrap: wrap;
     gap: 10px;
+    justify-content: center;
 }
 
 
