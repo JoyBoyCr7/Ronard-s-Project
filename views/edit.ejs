@@ -11,16 +11,25 @@
     div{
         background-color: white;
     }
+    h1{
+    text-align: center;
+}
+div{
+    display: flex;
+    width: 30%;
+    margin: 0 auto;
+
+}
 </style>
 <body>
     <h1>Edit <%= show.showName %></h1>
     <div>
         <form action="/shows/<%= show._id %>/?_method=PUT" method="post">
-            <label>Show Name:<input type="text" name="showName" value="<%=show.showName %>" ></label>
-            <label> Year Completed:<input type="text" name="yearCompleted" value="<%=show.yearCompleted %>"></label>
-            <label> Number of Stars:<input type="text" name="Rating" value="<%=show.Rating %>"></label>
-            <input type="text" name="showImg" value="<%= show.showImg %>">
-            <input type="checkbox" name="wouldRecommend" >
+            <label>Show Name:<input type="text" name="showName" value="<%=show.showName %>" ></label><br>
+            <label> Year Completed:<input type="text" name="yearCompleted" value="<%=show.yearCompleted %>"></label><br>
+            <label> Number of Stars:<input type="number" name="Rating" value="<%=show.Rating %>" max="5" min="1"></label><br>
+            <label> Image Url:<input type="text" name="showImg" value="<%= show.showImg %>"></label><br>
+            <label> wouldRecommend:<input type="checkbox" name="wouldRecommend" ></label>
             <input type="submit">
         </form>
     </div>

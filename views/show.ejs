@@ -10,6 +10,19 @@
 <style>
     div{
         background-color: white;
+        align-items: center;
+        margin: 0 auto;
+        width: 75%;
+    }
+    h1{
+        text-align: center;
+    }
+    h2{
+        text-align: center;
+    }
+    .inline{
+        display: flex;
+        justify-content: center;
     }
 </style>
 <body>
@@ -21,11 +34,13 @@
         <h2> <label>Would Recommend: <%= show.wouldRecommend %></h2> </label>
         <h2> <label>Image_url: <%= show.showImg %></h2> </label>
         
-        <a href="/shows/<%= show._id %>/edit"><button>edit</button></a>
-
-        <form  action="/shows/<%= show._id %>/?_method=DELETE" method="post">
-            <input type="submit" value="DELETE">
-        </form>
+        <div class="inline">
+            <a href="/shows/<%= show._id %>/edit"><button>edit</button></a>
+        
+            <form  action="/shows/<%= show._id %>/?_method=DELETE" method="post">
+                <input type="submit" value="DELETE">
+            </form>
+        </div>
     </div>
 </body>
 </html>
