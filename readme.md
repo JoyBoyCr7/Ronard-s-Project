@@ -31,3 +31,6 @@ This app is an app that allows the user to keep track of the shows they have wat
 
 ![PICTURE OF ERD](./images/Myerd.png)
 
+## Future Enhancements
+- Authentication
+
