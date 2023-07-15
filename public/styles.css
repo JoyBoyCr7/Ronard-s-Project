@@ -19,6 +19,7 @@ body{
     margin-top: 0px;
     margin-bottom: 0px;
     margin-right: 16px;
+    
 }
 
 .inner{
@@ -38,6 +39,13 @@ body{
 .add{
     display: grid;   
     align-items: center;
+    margin-left: auto;
+    background-color: rgb(50, 94, 255);
+    color: white;
+    padding-left: 20px;
+    padding-right: 20px;
+    border-radius: 20px;
+    text-decoration: none;
     
 }
 .end{

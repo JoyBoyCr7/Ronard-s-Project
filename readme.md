@@ -2,8 +2,8 @@
 
 - **Project Name:** Top Rated
 - **Project By:** Ronard Nyongkah
-- **LINK TO GITHUB**: https://github.com/JoyBoyCr7/Ronard-s-Project
-- **LINK TO DEPLOYED WEBSITE**: https://ronards-project2.onrender.com/
+- [**LINK TO GITHUB**] (https://github.com/JoyBoyCr7/Ronard-s-Project)
+- [**LINK TO DEPLOYED WEBSITE**] (https://ronards-project2.onrender.com/)
 - **List of Technologies used:** HTML, JS, CSS, Node, Express, EJS, Mongo
 - **LINK TO TRELLO**: https://trello.com/b/p1SVIJ2W/project2
 

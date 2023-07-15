@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Top Rated</title>
     <link rel="stylesheet" href="/styles.css">
 </head>
 <style>
@@ -49,7 +49,7 @@
 <body>
     <div class="nav">
         <div class="inner">
-            <a href="/shows"><h1 class="logo">Top Rated</h1></a>
+            <a href="/shows" style="text-decoration: none;"><h1 class="logo">Top Rated</h1></a>
             <div>
                 <img src="pngwing.com.png" alt="" class="logoimg"> 
                 <img src="https://upload.wikimedia.org/wikipedia/commons/c/c9/Naruto_logo.svg" alt="" class="logoimg"> 
@@ -64,7 +64,7 @@
                 <img src="HXH.png" class="logoimg">
                 <img src="strange.png" class="logoimg">
             </div>
-            <div class="add"><a href="/shows/new">Add A Show</a></div>
+            <a class="add" href="/shows/new" style="color: white;">Add A Show </a>
         </div>
     </div>
     
@@ -72,7 +72,7 @@
         <%shows.forEach(element => { %>
         <div class="container">
             <div class="itemone" >
-                <a href="/shows/<%=element._id%>"><img src= <%= element.showImg %> alt=""></a>
+                <a href="/shows/<%=element._id%>"><img src= <%= element.showImg %> alt="Image of show"></a>
             </div>
             <div class="bottomdiv">
                 <div class="itemtwo">
