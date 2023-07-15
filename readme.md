@@ -29,7 +29,7 @@ This app is an app that allows the user to keep track of the shows they have wat
 
 ## ERD (ENTITY RELATIONSHIP DIAGRAM)
 
-![PICTURE OF ERD](./images/Myerd.png)
+![PICTURE OF ERD](./images/updatedERD.png)
 
 ## Future Enhancements
 - Authentication
